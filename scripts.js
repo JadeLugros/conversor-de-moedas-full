@@ -114,7 +114,7 @@ if (convertTo === "R$ Real Brasileiro") {
     usaFlag.src = "./Assets/brazil-flag.png"
 
    
-}}
+}
 function formatCurrency(event) {
 
     let value = event.target.value
@@ -134,4 +134,4 @@ const inputCurrency = document.querySelector(".input-currency")
 
 inputCurrency.addEventListener("input", formatCurrency)
 
-
+}
