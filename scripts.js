@@ -75,7 +75,7 @@ if (convertFrom === "U$ Dólar Americano") {
     }
 
     if (convertFrom=== "A$ Dólar Australiano") {
-        brazilFlag.src = "./Assets/australian-flag.png"
+        brazilFlag.src = "./Assets/australia-flag.png"
     }
 
     if (convertFrom === "¥ Iene Japonês") {
@@ -104,7 +104,7 @@ if (convertFrom === "U$ Dólar Americano") {
     }
 
     if (convertTo === "A$ Dólar Australiano") {
-        usaFlag.src = "./Assets/australian-flag.png"
+        usaFlag.src = "./Assets/australia-flag.png"
     }
 
     if (convertTo === "¥ Iene Japonês") {
