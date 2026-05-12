@@ -110,9 +110,10 @@ if (convertFrom === "U$ Dólar Americano") {
     if (convertTo === "¥ Iene Japonês") {
         usaFlag.src = "./Assets/japan-flag.png"
     }
-
-    if (convertTo === "R$ Real Brasileiro") {
+if (convertTo === "R$ Real Brasileiro") {
     usaFlag.src = "./Assets/brazil-flag.png"
+
+   
 }}
 function formatCurrency(event) {
 
