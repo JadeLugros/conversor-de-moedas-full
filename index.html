@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="styles.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <img class="Money" src="./Assets/converter.jpg">
+    <main>
+        <label><b>Converter De:</b>       
+            <select id="select-convert">
+            <option>R$ Real Brasileiro</option>
+            <option>U$ Dólar Americano</option>
+            <option>€ Euro</option>
+            <option>£ Libra Esterlina</option>
+            <option>C$ Dólar Canadense </option>
+            <option>A$ Dólar Australiano</option>
+            <option>¥ Iene Japonês</option>
+        </select>
+        </label>
+
+        <label><b>Converter Para:</b>
+            <select id="select-converted">
+                
+            <option>U$ Dólar Americano</option>
+            <option>€ Euro</option>
+            <option>£ Libra Esterlina</option>
+            <option>C$ Dólar Canadense </option>
+            <option>A$ Dólar Australiano</option>
+            <option>¥ Iene Japonês</option>
+            <option>R$ Real Brasileiro</option>
+
+            </select>
+            </label>
+
+            <label>Valor:
+                <br>
+                <input class="input-currency" placeholder="0,00">
+            </label>
+            
+            
+            <button class="convert-button" >Convert</button>
+            <section>
+<div class="container-resultado">
+    <img  class="brazil-flag"   src="./Assets/brazil-flag.png" >
+    <p class="currency-to-convert">R$ 0,00</p>
+
+    <img class="arrow"  src="./Assets/vector.png">
+    <br>
+    
+    <img class="usa-flag" src="./Assets/usa-flag.png">
+    <p class="converted-currency">U$ 0,00</p>
+</div>
+            </section>
+    </main>
+    <script src="./scripts.JS"></script>
+
+
+</body>
+</html>
