@@ -5,11 +5,12 @@
     font-family: "Lato", sans-serif;
     outline: none;
     font-weight: 500;
-
 }
 
 body {
     min-height: 100vh;
+    padding: 20px;
+
     background: linear-gradient(
         -45deg,
         #1f1f1f,
@@ -21,34 +22,33 @@ body {
     background-size: 400% 400%;
     animation: gradientBG 12s ease infinite;
 }
-    
-
 
 h1 {
     color: aliceblue;
-    font-size: 52px;
+    font-size: clamp(28px, 6vw, 52px);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .Money {
-    width: 600px;
-    height: 400px;
-    margin: 1px auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
     display: block;
 }
 
 main {
     width: 100%;
     max-width: 600px;
-    min-height: 600px;
+    min-height: auto;
 
     background: rgba(55, 55, 55, 0.92);
 
     border-radius: 20px;
     margin: 20px auto;
-    padding: 40px 24px;
+    padding: 30px 20px;
 
     backdrop-filter: blur(10px);
 
@@ -56,20 +56,17 @@ main {
         0 0 25px rgba(0, 0, 0, 0.45),
         0 0 8px rgba(255, 255, 255, 0.05);
 }
-    
+
 label {
     color: #f1f1f1;
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 24px);
 }
-   
-
-
 
 select {
     border-radius: 30px;
     width: 100%;
     height: 60px;
-    font-size: 24px;
+    font-size: clamp(16px, 4vw, 24px);
     text-align: center;
     background-color: #5a5a5a;
     color: rgb(0, 0, 0);
@@ -77,16 +74,14 @@ select {
     border-color: #453f52;
     font-weight: 700;
     cursor: pointer;
-     border: 2px solid transparent;
-
+    border: 2px solid transparent;
 }
 
 input {
-
     border-radius: 30px;
     width: 100%;
     height: 60px;
-    font-size: 18px;
+    font-size: clamp(16px, 4vw, 18px);
     font-weight: 600;
     text-align: center;
     color: #f1f1f1;
@@ -94,7 +89,7 @@ input {
     border-color: #453f52;
     background-color: rgb(153, 150, 143);
     cursor: pointer;
-     border: 2px solid transparent;
+    border: 2px solid transparent;
 }
 
 input:focus,
@@ -105,27 +100,33 @@ select:focus {
 }
 
 button {
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 24px);
     color: #f1f1f1;
-    background-color:#6EB6AA ;
+    background-color: #6EB6AA;
+
     border-radius: 30px;
     height: 60px;
-    width: 400px;
+
+    width: 100%;
+    max-width: 400px;
+
     margin: 20px auto;
     border: 2px solid #4f5457;
     cursor: pointer;
     display: block;
+
     transition: all 0.3s ease;
 }
 
-button:hover{
+button:hover {
     opacity: .6;
 }
-button:active{
+
+button:active {
     opacity: .8;
 }
-section{
-   
+
+section {
     border: 2px solid rgba(133, 171, 228, 0.4);
     border-radius: 20px;
     margin-top: 30px;
@@ -134,34 +135,51 @@ section{
     background: rgba(255, 255, 255, 0.03);
 }
 
-
 .container-resultado {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #f1f1f1;
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 24px);
 }
-        
-p{
 
-    font-size: 24px;
+p {
+    font-size: clamp(18px, 4vw, 24px);
     color: #f1f1f1;
 }
-.brazil-flag{
-    width: 100px;
+
+.brazil-flag,
+.usa-flag {
+    width: 80px;
+    max-width: 100%;
     height: auto;
 }
 
-.arrow{
-    width: 50px;
-    height: 100px;
-
+.arrow {
+    width: 40px;
+    height: auto;
+    margin: 10px 0;
 }
 
-.usa-flag{
-    width: 100px;
-    height: auto;
+@media (max-width: 480px) {
+
+    body {
+        padding: 12px;
+    }
+
+    main {
+        padding: 24px 16px;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    select,
+    input,
+    button {
+        height: 55px;
+    }
 }
 
 @keyframes gradientBG {
